@@ -27,6 +27,8 @@ app.use(morgan("dev"));
 //     res.send("<h1>Loundry</h1>");
 // });
 app.use('/api/items', require('./routes/itemRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/bills', require('./routes/billRoute'));
 
 // port
 const PORT = process.env.PORT || 8080
